@@ -3,6 +3,7 @@ const circle2 = document.getElementById("circle2");
 const infoSquare = document.getElementById("infoSquare");
 
 const numSquares = 8;
+// const circleRadius = circle.offsetWidth / 2;
 const circleRadius = circle.offsetWidth / 2;
 const squareSize = 200;
 const margin = -200;
