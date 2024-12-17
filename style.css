@@ -29,6 +29,12 @@ h1 {
     font-family: "SharpSans", sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    /* writing-mode: vertical-lr; */
+
+}
+
+.vert {
+    writing-mode: vertical-lr;
 
 }
 
@@ -36,6 +42,7 @@ h2 {
     font-family: "SharpSans", sans-serif;
     font-weight: 400;
     font-size: 1.414rem;
+    /* writing-mode: vertical-lr; */
 
 }
 
