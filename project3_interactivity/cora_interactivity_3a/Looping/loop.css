@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    color: white;
+    background-color: red;
+    padding: 30px;
+    border-radius: 50px;
+    animation-name: square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes square {
+    0% {
+        transform: translateX(0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translateX(100px);
+        background-color: goldenrod;
+    }
+
+    50% {
+        transform: translateX(100px) translateY(100px);
+        background-color: dodgerblue;
+    }
+
+    75% {
+        transform: translateY(100px) translateX(-10px); 
+        background-color: darkmagenta;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+img, svg, gif, video, lottie-player {
+    display: block;
+    width:100%;
+}
+
+h1 {
+color:red;
+font-size:72px;
+font-family: "ff-folk-rough", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.intro {
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.background-video {
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}

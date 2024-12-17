@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    /*border: 2px solid red;*/
+    width: 80vw;
+    margin: 15px auto;
+    aspect-ratio: 3/2;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: grid;
+    grid-template-areas:
+        'apple apple orange'
+        'lime lemon orange';
+}
+
+.item {
+    /*border: 2px solid blue;*/
+}
+
+.item-1 {
+    grid-area: apple;
+    background-color: pink;
+
+
+}
+
+.item-2 {
+    grid-area: orange;
+    background-color: darkseagreen;
+
+}
+
+.item-3 {
+    grid-area: lime;
+    background-color: dodgerblue;
+
+}
+
+.item-4 {
+    grid-area: lemon;
+    background-color: goldenrod;
+
+}

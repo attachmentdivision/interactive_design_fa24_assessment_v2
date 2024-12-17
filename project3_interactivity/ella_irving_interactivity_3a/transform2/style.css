@@ -1,0 +1,51 @@
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+.container {
+    width: 80vw;
+    margin: 15px auto;
+    aspect-ratio: 3/2;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: grid;
+    grid-template-areas:
+        'apple apple orange'
+        'lime lime orange';
+}
+
+.item-A {
+    grid-area: apple;
+}
+
+.item-B {
+    grid-area: lime;
+}
+
+
+.item-C {
+    grid-area: orange;
+    /* width: 100px;*/
+    min-width: 300px;
+    aspect-ratio: 1/1;
+    /*border: 2px solid red;*/
+    transition: transform .5s;
+
+    animation: swing 3s linear 0 infinite direction none;
+}
+
+.item-C:hover {
+    transform: translateY(-50px) rotate(45deg) translateY(50px);
+
+}
+
+h1:hover {
+    color: rgb(255, 118, 27);
+    transform: scale(120%);
+}

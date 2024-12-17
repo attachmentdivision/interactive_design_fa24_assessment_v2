@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-height: 60vh;
+}
+
+.flower-1 {
+  animation: flower 8s linear infinite;
+}
+.flower-2 {
+  animation: flower 6s linear infinite;
+}
+
+/*
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: 
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+   
+}/*
+.item {
+    background-color:pink;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    transform:translateX(-150px);
+}
+*/
+@keyframes flower {
+  0% {
+    transform: translateX(200px) translateY(-200px);
+  }
+
+  100% {
+    transform: rotate(180deg) translatex(200px) translateY(800px);
+  }
+}

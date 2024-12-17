@@ -1,0 +1,63 @@
+h1 {
+    color: rgb(35, 90, 240);
+    font-size: 40px;
+}
+
+img {
+    min-width: 100px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-A {
+    /*border: 2px solid red;*/
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation: slide 5s infinite;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(150px) translateY(-200px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0);
+    }
+}
+
+.item-B {
+
+    animation-name: slidein;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation: slidein 5s infinite;
+
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(150px);
+        color: rgb(44, 58, 251);
+    }
+
+    100% {
+        transform: translateX(0px);
+        color: rgb(244, 89, 42);
+    }
+}

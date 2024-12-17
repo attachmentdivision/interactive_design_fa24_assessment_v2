@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+}
+
+
+.o, .l, .d, .s, .u, .t, .a, .n{
+    width: 120px;
+}
+
+.o, .l, .d, .s, .u, .t, .a, .n{
+    animation-name: jumpin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal, reverse;
+    animation-direction: alternate, reverse, normal;
+    animation-fill-mode: none, backwards;
+    animation-fill-mode: both, forwards, none;
+}
+
+.o, .l, .d {
+    animation-delay: .4s;
+}
+
+
+@keyframes jumpin{
+    0%{
+        transform: rotateZ(10deg);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(50px);
+        transform: rotateZ(-20deg);
+    }
+
+
+}
+
+.old{
+    min-width:auto;
+}
+.sultan{
+    min-width: auto;
+}
+
+h1{
+    font-family: "ff-karbid-slab-web-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "ff-karbid-slab-web-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dog_head{
+    max-width:550px;
+    margin-right:34px;
+}
+
+
+
+.left{
+    min-width:20px;
+}
+
+.right{
+    transform: rotate(-19.562deg);
+    margin: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-bottom: 500px;
+}
+
+.fairytale{
+    max-width: 300px;
+}
+
+.old{
+    gap:12px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+
+.sultan{
+    display:flex;
+    gap: 6px;
+    padding-top: 10px;
+} 
+
+body{
+    background-color: #aee5fb;
+}
+
+.y, .a_2, .w, .n_2{
+    width: 60px;
+    margin: 8px;
+}
+
+.y{
+    transform:rotate(40deg);
+    z-index: 4;
+}
+
+.a_2{
+    z-index: 3;
+}
+
+.w{
+    z-index: 2;
+}
+
+.n_2{
+    transform:rotate(-70deg);
+    z-index: 1;
+}
+
+.yawn{
+    display:flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 20px;
+    transform: rotate(-10deg);
+}
+
+.yawning{
+    width: 550px;
+}
+
+.left_2{
+    margin:20px;
+    max-width:400px;
+
+}
+
+.right_2{
+    margin:20px;
+}
+
+.container_2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 200px;
+}
+
+.s_1, .h_1, .o_1, .o_2, .t_1{
+    width:150px;
+}
+
+
+.container_3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 200px;
+    font-size: 3rem;
+}
+
+.shoot{
+    min-width:820px;
+}
+
+.cloud_1{
+    max-width: 1800px;
+    z-index: -1;
+
+}
+
+
+.cloud_2{
+    width: 700px;
+    transform:rotate(-180deg);
+}
+
+.useage{
+    margin-left:50px;
+    max-width:300px;
+    position: absolute;
+}
+
+.landscape{
+    display: flex;
+    margin-top: 200px;
+}
+
+.hill_1{
+    z-index: -1;
+    max-width: 1800px;
+}
+
+.downward_dog{
+    z-index: 4;
+    position: absolute;
+    width:200px;
+    margin-top: 560px;
+    margin-left: 450px;
+    rotate: 10deg;
+}
+
+.hill_2{
+    z-index:2;
+    position: absolute;
+    margin-top:400px;
+    max-width: 1800px;
+}
+
+.farmhouse{
+    z-index:2;
+    position: absolute;
+    max-width: 350px;
+    margin-left:100px;
+    padding-top: 100px;
+}
+
+.hill_3{
+    z-index:3;
+    position: absolute;
+    margin-top: 600px;
+    max-width: 1800px;
+}
+
+.barn{
+    z-index: 1;
+    position: absolute;
+    max-width: 700px;
+    padding-left: 900px;
+    margin-top:200px
+}
+
+
+
+
+

@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    color: white;
+    background-color: blueviolet;
+    padding: 30px;
+    border-radius: 50px;
+    transition: transform 1.5s;
+}
+
+.item:hover {
+    transform: rotate(-360deg);
+    transition-timing-function: ease-in-out;
+}

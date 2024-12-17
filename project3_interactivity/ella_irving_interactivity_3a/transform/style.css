@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item {
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: pink;
+    border: 2px solid red;
+    transition: transform .5s, background-color .3s;
+
+    animation: swing 3s linear 0 infinite direction none;
+
+}
+
+.item:hover {
+    background-color: blue;
+    transform: translateY(-50px) rotate(45deg);
+}

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 251, 232);
+    color: rgb(17, 121, 199);
+    /* max-width: 700px; */
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(253, 251, 232);
+    margin: 10px 48px 10px 40px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between; 
+    font-size: 1.25rem;
+    align-items: center;
+   
+}
+
+a{
+    /* border: 2px solid red; */
+    text-decoration: none;
+    color:rgb(17, 121, 199) ;
+    font-family: "panno-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .125rem;
+    margin-left: 8px;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+a:hover {
+    color: var(--primary-color);
+    transition: color 0.2s ease;
+}
+
+.menu{
+    max-width: 950px;
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+    display: grid;
+}
+
+.section_header{
+    background-color: rgb(253, 251, 232);
+    margin: 0px 50px;
+    border: 4px solid var(--primary-color);
+    font-family: "panno-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: .3125rem;
+    position: sticky;
+    top: 0;
+}
+
+h3{
+    font-family: "panno-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .125rem;
+    margin: 30px 50px 10px 50px;
+}
+
+p{
+    font-family: "panno-text", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 10px 50px 30px 50px;
+}
+.section_info{
+    font-family: "panno-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section_info_two{
+    font-family: "panno-text", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;  
+    margin: 25px;
+}
+
+.logo{
+    width: 300px;
+    display: block;
+    margin: 30px auto;
+    align-items: start;
+}
+
+.logo_two{
+    width:75px;
+    display: block;
+}
+
+hr{
+    background-color: var(--primary-color);
+    height: 4px;
+    border: 0px solid var(--primary-color);
+    margin: 0px 50px;
+}
+
+:root{
+    --primary-color:rgb(230, 162, 36) 
+    
+}
+
+@media (min-width:600px){
+    .menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 400px) {
+    body {
+        min-width: 400px;
+    }
+}

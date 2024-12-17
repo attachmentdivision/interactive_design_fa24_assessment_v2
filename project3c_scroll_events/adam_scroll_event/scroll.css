@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('catbar.jpg') no-repeat center center/cover;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    z-index: 1;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: rgb(143, 113, 88);
+    margin: 50px 0;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    z-index: 2;
+}
+
+.scroll-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.scroll-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #f7a950;
+    transition: height 0.1s;
+}
+
+.cat {
+    height: 100%;
+    width: 100%;
+}

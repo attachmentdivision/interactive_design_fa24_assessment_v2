@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.34 682.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8c15c;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        font-family: MontserratAlternates-Thin, 'Montserrat Alternates';
+        font-size: 226.14px;
+        font-weight: 200;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(0 192.21)"><tspan class="cls-2"><tspan x="0" y="0">O</tspan><tspan class="cls-4" x="189.05" y="0">B</tspan><tspan x="351.41" y="0">J</tspan><tspan class="cls-3" x="459.28" y="0">E</tspan><tspan x="594.73" y="0">CTS</tspan></tspan><tspan class="cls-2"><tspan x="0" y="216.05">AND</tspan></tspan><tspan class="cls-1"><tspan x="0" y="432.1">POWER</tspan></tspan></text>
+</svg>

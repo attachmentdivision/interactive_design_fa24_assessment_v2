@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-padding-top: 150px;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header_wrap{
+    position: fixed;
+    height: auto;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.title{
+    /* border: 2px solid red; */
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    letter-spacing: .7px;
+    width: 600px;
+}
+
+.nav{
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    letter-spacing: .5px;
+
+}
+
+header{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    padding: 15px 30px;
+}
+
+nav{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav:hover{
+    color: rgb(63, 119, 98);
+    transition: color 0.25s ease;
+}
+
+.title:hover{
+    color: rgb(63, 119, 98);
+    transition: color 0.25s ease;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+h2{
+    font-family: "baskerville-display-pt", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem; 
+    color: black;
+}
+
+p{
+    font-family: "baskerville-display-pt", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(74, 74, 74);
+    font-size: .8rem;
+    width:250px;
+    margin-bottom: 20px;
+}
+
+#title_img{
+    width: 100vw;
+    /* max-width: 900px; */
+    min-width: 500px;
+
+}
+
+.body_image{
+    height: 550px;
+}
+
+.body_image2{
+    height: 450px;
+}
+
+.gallery_grid{
+    width:4000px;
+    display: grid;
+    /* border: 2px solid red; */
+    aspect-ratio: 6/7;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.main_title{
+    /* border: 2px solid red; */
+    width: 100vw;
+    grid-area: 4/3/5/5;
+    display: flex;
+    position: relative;
+    /* max-width: 900px; */
+    min-width: 500px;
+}
+
+.title_info{
+    /* border: 2px solid blue; */
+    width: 180px;
+    position: absolute;
+    bottom: 21%;
+    right: 0;
+}
+
+.handprint{
+    width: 620px;
+    height: 600px;
+    /* border: 2px solid blue; */
+    grid-area: 1/1/3/4;
+    display: flex;
+    position: relative;
+}
+
+.handprint_info{
+    /* border: 2px solid red; */
+    text-align: right;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.handprint_image{
+    position: absolute;
+    bottom: 0;
+}
+
+.armature{
+    grid-area: 1/4/3/6;
+}
+
+.bookcase{
+    /* border: 2px solid red; */
+    grid-area: 2/3/4/5;
+    display: flex;
+    position: relative;
+    height: 600px;
+    width: 950px;
+}
+
+.bookcase_info{
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+}
+
+.bookcase_image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.moon-faced{
+    /* border: 2px solid red; */
+    grid-area: 3/1/5/3;
+    display: flex;
+    position: relative;
+    height: 550px;
+    width: 450px;
+}
+
+.moon-faced_info{
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+.moon-faced_image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.portal{
+    /* border: 2px solid red; */
+    grid-area: 2/5/5/7;
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 550px;
+}
+
+.portal_info{
+    width: 250px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.portal_image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wall{
+    /* border: 2px solid red; */
+    grid-area: 5/1/6/4;
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 570px;
+}
+
+.wall_info{
+    text-align: right;
+    width: 250px;
+    position: absolute;
+    bottom: 10px;
+    right: 455px; 
+}
+
+.images{
+    /* border: 2px solid red; */
+    grid-area: 5/4/7/5;
+    display: flex;
+    position: relative;
+    height: 650px;
+    width: 680px;
+}
+
+.images_info{
+    text-align: right;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+
+.bust{
+    /* border: 2px solid red; */
+    grid-area: 4/5/7/7;
+    display: flex;
+    position: relative;
+    height: 680px;
+    width: 550px;
+}
+
+.bust_info{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.bust_image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.baskets{
+    /* border: 2px solid red; */
+    grid-area: 6/1/8/4;
+    display: flex;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+}
+
+.baskets_info{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.baskets_image{
+    position: absolute;
+    bottom: 0;
+}
+
+.painting{
+    /* border: 2px solid red; */
+    grid-area: 7/4/8/7;
+    width: 910px;
+    height: 550px;
+    display: flex;
+    position: relative;
+}
+
+.painting_info{
+    width: 250px;
+    position: absolute;
+    bottom: 55px;
+    left: 0; 
+}
+
+.painting_image{
+    position: absolute;
+    right: 0;
+}
+
+
+
+/* artist page */
+
+
+
+.painting_body{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1{
+    margin-top: 160px;
+    margin-left: 55px;
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;  
+    letter-spacing: .75px; 
+}
+
+.painting_info_2{
+    margin-top: 10px;
+    margin-left: 55px;
+    font-family: "baskerville-display-pt", serif;
+    font-weight: 400;
+    font-style: normal; 
+    width: 50vw;
+    color: rgb(74, 74, 74);
+}
+
+.painting_header{
+    /* border: 2px solid red; */
+    width: 70vw;
+}
+
+.paint_img{
+    width: 98vw;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1000px;
+}
+
+.painting_description{
+    margin-top: 40px;
+    margin-left: 55px;
+    width: 70vw;
+    max-width: 500px;
+}
+
+.last_part{
+    margin-bottom: 55px;
+}
+
+.half_line{
+    margin-top: 80px;
+    margin-left: 55px;
+    margin-right: 55px;
+    /* width: 70vw; */
+    max-width: 900px;
+}
+
+/* .artist_section{
+    border: 2px solid red;
+
+} */
+
+.about_artist{
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.artist_info{
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 55px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 70vw; */
+    gap: 12px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 55px;
+}
+
+.artist_description{
+    /* border: 2px solid purple; */
+    margin-top: 30px;
+    width: 70vw;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.villalongo{
+    /* border: 2px solid blue; */
+    width: 300px;
+
+}
+
+.footer{
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: .75rem;
+}
+
+.ica_logo{
+    width: 100px;
+}
+
+.ica_info{
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .7px;   
+}
+
+@media (max-width: 500px){
+    .web_title{
+        display: none;
+    }
+}
+
+@media (min-width: 501px){
+    .mobile_title{
+        display: none !important;
+    }
+}
+
+.mobile_title{
+    /* border: 2px solid red; */
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.oap_mobile{
+    /* border: 2px solid red; */
+    width: 100vw;
+}
+
+.title_info_mobile{
+    /* border: 2px solid red; */
+    position: absolute; 
+    right:0;
+    bottom: 41%;
+    width: 180px;
+}

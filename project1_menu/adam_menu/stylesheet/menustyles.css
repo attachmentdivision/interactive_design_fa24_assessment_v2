@@ -1,0 +1,341 @@
+/* Body Page Info */
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+img, video {
+    display: block;
+    width:100%;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    cursor: url(/Menu/crawlclick-01.png), auto;
+    cursor: url(/Menu/crawlclick-01.png), pointer;
+    cursor: url()
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a {
+color: white;
+font-size: 17px;
+font-weight: bold;
+margin-right: 20px;
+text-decoration: none;
+}
+button{
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+button a{
+    color: white; 
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+/* Class Tags */
+.title {
+    text-align: center;
+    color: rgb(232, 61, 61);
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 8px
+}
+.sub {
+    text-align: center;
+    color: rgb(39, 78, 179);
+    font-size: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.menuhead {
+width: 400px;
+height: 47px;
+background-color: rgb(232, 61, 61);
+text-align: center;
+border-width: 6px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border-radius: 30px;
+margin-top: 40px;
+}
+.subbox {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 480px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+color: rgb(154, 36, 15);
+border-style:double;
+border-width: 9px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border-radius: 30px;
+}
+.cat {
+font-size: 30px;
+margin-bottom: 0px;
+margin-top: 20px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.info {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(39, 78, 179);
+    display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+max-width: 100%;
+margin-bottom: 40px;
+}
+.infos {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-bottom: 20px;
+    text-decoration-thickness: 4px;
+    display: flex;
+align-items: center;
+justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.major{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+.bgi {
+    background-image: url(../images/fried.jpg);
+}
+.majorsub {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.organ {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.endbanner {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: end;
+}
+.logo {
+    text-decoration: none;
+}
+.navhead {
+    background-color:rgb(0, 86, 171);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 25px; 
+    padding-left:25px;
+    min-height: 100;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px
+}
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.float{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: Bold;
+    text-decoration: underline;
+    font-size: 40px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contain {
+    margin: 15px auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    grid-template-columns: repeat();
+}
+.png {
+    width: 100px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #cd4747;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    z-index: 1000;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.back-to-top:hover {
+    background-color: #000000;
+}
+body:target .back-to-top,
+body:not(:target) .back-to-top {
+    display: block;
+}
+.container {
+    background-color:rgb(0, 86, 171);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.direct {
+    color: white;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+}
+.foot-widget {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sep {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 37%;
+    margin-top: -20px;
+    margin-bottom: -50px;
+}
+#myvideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.footimg {
+    width: 200px;
+    margin-bottom: 20px;
+}
+#foot {
+    height: 100px;
+}
+/* OOOOOOO When Making a Side BANNER OOOOOOO*/
+/* .schedule{ */
+/* padding
+display flex
+flex direction column
+justify content space between
+height
+color
+max width
+ */
+
+/* Header styling lets goooo! */
+
+
+
+/* CLASS NOTES */
+/* In order of effect \/ */
+/* style attributes, id's, classes, elements  */
+
+/* margin 0
+padding 0
+box-sizing: border-box */
+
+/* buttons and images are inline blocks, but differ when you manipulate the box model. */
+
+/* class notes- Borders and boxes - CONTAINER
+Width / height / borders 
+/ */
+
+/* Pictures needed, why just 1
+Streamline the fonts and typesizes
+Include photos of the settings to set up the atmosphere
+Border Bottom to keep the spacing consistent on the bottom as well
+Reallign the text on the top of the page
+Consdier recoliring to keep consistant with company branding
+ */
+
+ /* Flex Box- Creates alignments off of two boxes.
+ ie: Maine axis and cross axis
+ display<>
+ Rows and Cullomns, you can decide which direction it goes in.
+ Align items in the box with "Justify Content
+ By default it starts with front containre, end of container does the far right. 
+ "Center" as an allighnment works as well. 
+ You can also place space inbetween your items, which allows you to have 2 or more elements in the corners while sticking other stuff in the middle. 
+ 
+ Homework - Place 2 boxes units in the top of the page or at the top of a allignment in both corners. 
+ Alligning things along the main axis is justified content. 
+ Set height in the child and all items will respect the same rules. Justify is along the
+ Things you declare on the parent move down to the children*/
+
+ /* NOTES
+ Remove underline from "Check Reservation
+ Change Z axis of Navbar so that it sits on top of the video
+ Remove underline from Nav bar links
+ Spacing under prices on the menu, such as between the "Eat In or Take Out, and remove borders on it as well.
+Lose all the underlines-
+Strip out most borders as well. */

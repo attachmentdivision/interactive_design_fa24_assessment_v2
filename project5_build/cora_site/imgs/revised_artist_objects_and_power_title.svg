@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 354.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c1d1d;
+        font-family: MontserratAlternates-ExtraLight, 'Montserrat Alternates';
+        font-size: 173.08px;
+        font-weight: 200;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(-17.62 126.63)"><tspan class="cls-4" x="0" y="0">Nyee</tspan><tspan class="cls-3" x="464.2" y="0">m</tspan><tspan class="cls-4" x="650.26" y="0">a</tspan><tspan class="cls-4" x="0" y="189.9">Mo</tspan><tspan class="cls-2" x="320.89" y="189.9">r</tspan><tspan class="cls-4" x="387.01" y="189.9">gan</tspan></text>
+</svg>

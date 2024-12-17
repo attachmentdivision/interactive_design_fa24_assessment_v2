@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, svg, gif, video{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    color: rgb(33, 56, 29);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(216, 239, 253);
+    padding:10px;
+}
+
+.background_video{
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.intro{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

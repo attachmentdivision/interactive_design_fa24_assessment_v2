@@ -1,0 +1,176 @@
+
+
+/* #region RESESTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* #endregion */
+
+body {
+    font-family: "courier";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    color: rgb(255, 255, 255);
+}
+
+
+.left-corner {
+    text-align: right;
+    /* align-self: end; */
+    /* background-color: aqua; */
+}
+
+
+
+.progress_bar {
+    position: fixed;
+    height: 7px;
+    width: 100%;
+    background-color: rgb(255, 0, 128);
+    z-index: 10;
+
+}
+
+
+
+.grid {
+    padding: 40px 50px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 3fr .6fr;
+    /* border: 2px solid red; */
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: color .3s;
+
+}
+
+.header__text {
+    grid-column: 1/4;
+
+}
+
+.white {
+    color: rgb(224, 224, 224) !important;
+}
+
+.section {
+    height: 100vh;
+    /* padding: 70px 20%; */
+    overflow: hidden;
+}
+
+.item {
+    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1/1;
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.bg {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.s1 {
+    background-color: rgb(180, 217, 59);
+    
+
+
+}
+
+.s2 {
+    background-color: rgb(255, 72, 0);
+
+}
+
+.s3 {
+    background-color: rgb(255, 196, 196);
+    background-image: url(img/AdobeStock_165072513.png);
+}
+
+.s4 {
+    background-color: rgb(68, 58, 97);
+}
+
+/* .progress_bar--white {
+    background-color: white;
+} */
+
+.september {
+    background-image: url('img/sorority1.png');
+    z-index: 2;
+
+}
+
+.october {
+    background-image: url('img/piece3\ pt2.png');
+
+}
+
+.november {
+    background-image: url('img/Sorority\ cover3\ pt2\ copy.png');
+
+}
+
+.december {
+    background-image: url('img/sororitycover6.png');
+    z-index: 2;
+}
+
+.extra {
+    background-image: url('img/lines.png')
+
+}
+
+.left {
+    font-size: 5rem;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    color: rgba(223, 255, 41, 0.874);
+    ;
+    z-index: 3;
+    align-self: center;
+    line-height: .8;
+    letter-spacing: -.2rem;
+    position: relative;
+    top: -2vh;
+
+}
+
+.right {
+    background-image: url(img/lines.png);
+}
+
+
+
+
+
+
+

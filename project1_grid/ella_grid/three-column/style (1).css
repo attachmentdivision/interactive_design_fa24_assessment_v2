@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container {
+    border: 2px solid red;
+    width: 80vw;
+    margin: 15px auto;
+    aspect-ratio: 3/2;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+
+}
+
+.item {
+    border: 2px solid blue;
+}
+
+.item-1 {
+    background-color: pink;
+    grid-column: 1;
+
+}
+
+.item-2 {
+    background-color: darkseagreen;
+    grid-column: 2;
+
+}
+
+.item-3 {
+    background-color: dodgerblue;
+    grid-column: 3;
+}

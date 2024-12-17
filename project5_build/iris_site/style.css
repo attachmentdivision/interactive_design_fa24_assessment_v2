@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6vw;
+}
+
+body {
+  font-family: "adobe-garamond-pro", serif;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1vw;
+  max-width: 20vw;
+  padding-left: 40px;
+  padding-top: 100px;
+}
+
+img {
+  max-width: 60vw;
+  display: block;
+}
+
+p {
+  font-family: "adobe-garamond-pro", serif;
+  font-weight: 400;
+  /* max-width: 40vw; */
+  /* width: 50%; */
+  /* this is why the credits paragraphs were so thin */
+  padding-left: 20%;
+  padding-top: 100px;
+  /* part of your system! */
+  transition: all 0.2s ease;
+}
+
+.info {
+  width: 50%;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 10;
+  padding: 10px 20px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 5px 10px;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+}
+
+.ica {
+width: 18%;
+}
+
+.ica-2 {
+width: 40%;
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.center-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* align items = no right in dates */
+}
+
+.dates {
+  position: absolute;
+  /* right: 0; */
+  /* dates = no align items in center-date */
+  padding: 20px;
+}
+
+.main {
+  display: block;
+  max-width: 100vw;
+}
+
+.large-img {
+  padding-top: 150px;
+  display: block;
+  max-width: 90%;
+}
+
+.left {
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+.right {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.center {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.credits-title {
+  text-align: center;
+}
+
+.credits-container {
+  display: block;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.credits-column {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-right: 40px;
+}
+
+.credits-paragraph {
+  display: flex;
+}
+
+.pullquote {
+  text-align: center;
+  font-size: 2.4vw;
+  padding-bottom: 100px;
+}
+
+.credit-span {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 0;
+  max-width: 50vw;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  max-width: 100vw;
+  margin-top: auto;
+  display: flex;
+  padding: 50px;
+}
+
+.footerbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .credits-column {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center the columns */
+    margin: 0 auto; /* Center the section */
+    padding: 10px;
+  }
+  .column {
+    width: 90%; /* Make each column span full width */
+  }
+  .credits-paragraph {
+    justify-content: center;
+    padding: 10px;
+  }
+  .info {
+    width: 400px;
+  }
+  p {
+    padding-left: 50px;
+  }
+}

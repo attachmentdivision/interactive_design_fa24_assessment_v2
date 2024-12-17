@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+   width: 200px;
+   padding: 24px 12px 36px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    /* border:2px solid red */
+    
+}
+
+.nav{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items:end
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+.year{
+    /* border: 2px solid red; */
+    color: white;
+
+}
+

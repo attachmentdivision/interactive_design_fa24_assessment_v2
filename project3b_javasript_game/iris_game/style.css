@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(img/gradient.jpeg);
+  font-family: "variex", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  color: #6aa943;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#bubble-wrap {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-gap: 10px;
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  background-color: #88c0d0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.1s ease, transform 0.2s ease;
+}
+
+.popped {
+  background-color: #d8dee9;
+  /* pointer-events: none; THIS MEANS YOU CANT CLICK ON THEM  */
+}
+
+.scaled {
+  transform: scale(0.7);
+}

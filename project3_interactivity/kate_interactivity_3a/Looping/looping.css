@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color:maroon;
+    animation-name: jumpin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal, reverse;
+    animation-direction: alternate, reverse, normal;
+    animation-fill-mode: none, backwards;
+    animation-fill-mode: both, forwards, none;
+}
+
+.item-a{
+    animation-delay: .2s;
+}
+
+.item-b{
+    animation-delay: .4s;
+}
+
+.item-c{
+    animation-delay: .6s;
+}
+
+.item-a{
+    animation-delay: .8s;
+}
+
+@keyframes jumpin{
+    0%{
+        transform: rotateZ(45deg);
+    }
+
+    50%{
+        transform: translateY(150px);
+    }
+
+    100%{
+        transform: translateY(150px);
+        transform: rotateZ(-45deg);
+    }
+
+
+}
