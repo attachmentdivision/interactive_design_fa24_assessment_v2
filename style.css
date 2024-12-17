@@ -114,3 +114,19 @@ ul {
     position: sticky;
     top: 30px;
 }
+
+@media (max-width: 650px) {
+
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+
+        writing-mode: vertical-lr;
+
+    }
+
+
+}
