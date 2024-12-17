@@ -8,42 +8,55 @@ const squareSize = 200;
 const margin = -200;
 let rotation = 0;
 
-const infoTexts = ["Nyeema Morgan", "SaraNoa Mark", "Michael Rakowitz", "William Villalongo", "Gala Porras-Kim", "Maya Tihtiyas Attean", "Morehshin Allahyari", "Samuel Levi Jones"];
+const infoTexts = [
+  "Nyeema Morgan",
+  "SaraNoa Mark",
+  "Michael Rakowitz",
+  "William Villalongo",
+  "Gala Porras-Kim",
+  "Maya Tihtiyas Attean",
+  "Morehshin Allahyari",
+  "Samuel Levi Jones",
+];
 const squareImages = [
-    "wheel imgs/2024-ICA-OP_Nyeema-Morgan_tsui-18 copy.jpg",
-    "wheel imgs/tsui-29.jpg",
-    "wheel imgs/2024-ICA-OP_Michael-Rakowitz_tsui-19.jpg",
-    "wheel imgs/2024-ICA-OP_William-Villalongo_tsui-21.jpg",
-    "wheel imgs/2024-ICA-OP_Gala-Porras-Kim_tsui-16.jpg",
-    "wheel imgs/2024-ICA-OP_Maya-Tihtiays-Attean_tsui-4.jpg",
-    "wheel imgs/2024-ICA-OP_Morehshin-Allahyari_tsui-11.jpg",
-    "wheel imgs/2024-ICA-OP_Samuel-Levi-Jones_tsui-12.jpg"
+  "wheel imgs/2024-ICA-OP_Nyeema-Morgan_tsui-18 copy.jpg",
+  "wheel imgs/tsui-29.jpg",
+  "wheel imgs/2024-ICA-OP_Michael-Rakowitz_tsui-19.jpg",
+  "wheel imgs/2024-ICA-OP_William-Villalongo_tsui-21.jpg",
+  "wheel imgs/2024-ICA-OP_Gala-Porras-Kim_tsui-16.jpg",
+  "wheel imgs/2024-ICA-OP_Maya-Tihtiays-Attean_tsui-4.jpg",
+  "wheel imgs/2024-ICA-OP_Morehshin-Allahyari_tsui-11.jpg",
+  "wheel imgs/2024-ICA-OP_Samuel-Levi-Jones_tsui-12.jpg",
 ];
 
 const squares = [];
 
 for (let i = 0; i < numSquares; i++) {
-    const square = document.createElement("div");
-    square.classList.add("square");
+  const square = document.createElement("div");
+  square.classList.add("square");
 
-    square.style.backgroundImage = `url('${squareImages[i]}')`;
+  square.style.backgroundImage = `url('${squareImages[i]}')`;
 
-    squares.push(square);
+  squares.push(square);
 
-    const angle = (2 * Math.PI * i) / numSquares;
-    const x = (circleRadius - margin - squareSize / 2) * Math.cos(angle) + circleRadius;
-    const y = (circleRadius - margin - squareSize / 2) * Math.sin(angle) + circleRadius;
+  const angle = (2 * Math.PI * i) / numSquares;
+  const x =
+    (circleRadius - margin - squareSize / 2) * Math.cos(angle) + circleRadius;
+  const y =
+    (circleRadius - margin - squareSize / 2) * Math.sin(angle) + circleRadius;
 
-    const rotationAngle = (angle * 180) / Math.PI;
-    square.style.transform = `rotate(${rotationAngle}deg)`;
+  const rotationAngle = (angle * 180) / Math.PI;
+  square.style.transform = `rotate(${rotationAngle}deg)`;
 
-    square.style.left = `${x - squareSize / 2}px`;
-    square.style.top = `${y - squareSize / 2}px`;
+  square.style.left = `${x - squareSize / 2}px`;
+  square.style.top = `${y - squareSize / 2}px`;
 
-    circle.appendChild(square);
+  circle.appendChild(square);
 }
 
-circle2.addEventListener('wheel', (event) => {
+circle2.addEventListener(
+  "wheel",
+  (event) => {
     event.preventDefault();
     rotation += event.deltaY * 0.1;
     circle.style.transform = `rotate(${rotation}deg)`;
@@ -52,4 +65,6 @@ circle2.addEventListener('wheel', (event) => {
     const adjustedIndex = (rightmostIndex + numSquares) % numSquares;
 
     infoSquare.textContent = infoTexts[adjustedIndex];
-}, { passive: false });
+  },
+  { passive: false }
+);
