@@ -59,6 +59,10 @@ a {
     color: rgb(69, 113, 167);
 }
 
+a:hover {
+    color: rgb(0, 161, 64);
+}
+
 li {
     list-style-type: none;
 
