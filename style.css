@@ -109,8 +109,8 @@ ul {
 }
 
 .container {
-    padding: 0 70px;
-    padding-top: 80px;
+    padding: 80px 70px;
+    /* padding-top: 80px; */
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -132,6 +132,6 @@ ul {
     }
 
     .container {
-        padding: 0 40px;
+        padding: 80px 40px;
     }
 }
